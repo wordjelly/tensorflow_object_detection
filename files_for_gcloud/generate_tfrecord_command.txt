@@ -1,0 +1,16 @@
+run from models/research
+---------------------------
+first do:
+
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+
+then from models/research
+
+python /home/bhargav/Pictures/analysis/files_for_gcloud/generate_tfrecord.py --csv_input=/home/bhargav/Pictures/analysis/files_for_gcloud/data_nail/training_csv.csv  --output_path=/home/bhargav/Pictures/analysis/files_for_gcloud/data_nail/training.record --images_path=/home/bhargav/Pictures/analysis/stage_for_gcloud/training_images
+
+
+python /home/bhargav/Pictures/analysis/files_for_gcloud/generate_tfrecord.py --csv_input=/home/bhargav/Pictures/analysis/files_for_gcloud/data_nail/training_csv.csv  --output_path=/home/bhargav/Pictures/analysis/files_for_gcloud/data_nail/training.record --images_path=/home/bhargav/Pictures/analysis/stage_for_gcloud/training_images
+
+------------------------------------------------------------------------
+
+python xml_to_csv.py ../stage_for_gcloud/test_xml_files/ ./data_nail/test_csv.csv

@@ -1,0 +1,11 @@
+gcloud ml-engine jobs submit training `whoami`_object_detection_eval_`date +%s` \
+    --runtime-version 1.5 \
+    --job-dir=gs://pathofast-image-analysis-bucket/train_nail \
+    --packages dist/object_detection-0.1.tar.gz,slim/dist/slim-0.1.tar.gz,/home/bhargav/Pictures/analysis/nails/files_for_gcloud/pycocotools-2.0.tar.gz \
+    --module-name object_detection.eval \
+    --region us-central1 \
+    --config object_detection/samples/cloud/cloud.yml \
+    -- \
+    --checkpoint_dir=gs://pathofast-image-analysis-bucket/train_nail \
+    --eval_dir=gs://pathofast-image-analysis-bucket/eval_nail \
+    --pipeline_config_path=gs://pathofast-image-analysis-bucket/data_nail/neural_net.config

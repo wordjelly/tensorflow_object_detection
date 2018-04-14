@@ -1,0 +1,15 @@
+b/*
+c/*
+k/*
+nails/*
+stage_for_gcloud/*
+test_cropped_images/*
+training_cropped_images/*
+files_for_gcloud/pycocotools-2.0.tar.gz
+!b/.gitkeep
+!c/.gitkeep
+!k/.gitkeep
+!nails/.gitkeep 
+!stage_for_gcloud/.gitkeep
+!test_cropped_images/.gitkeep
+!training_cropped_images/.gitkeep

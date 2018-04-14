@@ -1,0 +1,7 @@
+## execute this from the models/research/object_detection library
+
+python export_inference_graph.py \
+    --input_type image_tensor \
+    --pipeline_config_path /home/bhargav/Pictures/analysis/files_for_gcloud/data_nail/neural_net.config \
+    --trained_checkpoint_prefix /home/bhargav/Pictures/analysis/stage_for_gcloud/model_trained_from_gcloud/model.ckpt-28770 \
+    --output_directory /home/bhargav/Pictures/analysis/stage_for_gcloud/model_trained_from_gcloud
